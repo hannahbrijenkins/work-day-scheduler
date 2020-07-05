@@ -34,7 +34,7 @@
         <div class="hour">
           <h3>9am</h3>
         </div>
-        <textarea name="" id=""></textarea>
+        <textarea id="textBox"></textarea>
         <button class="saveBtn"></button>
       </div>
       <div class="row">
@@ -98,9 +98,20 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
+      // this displays the date at the top of the page
       var CurrentDate = moment().format('dddd, MMMM Do');
       console.log(CurrentDate);
-      document.getElementById("currentDay").innerHTML = CurrentDate
+      document.getElementById("currentDay").innerHTML = CurrentDate;
+
+      // this changes the background color of the textarea depending on the time
+      function color() {
+        var red = document.getElementById('textBox')
+
+      red.style.backgroundColor=("red");
+      }
+
+      color;
+
     </script>
   </body>
 </html>
